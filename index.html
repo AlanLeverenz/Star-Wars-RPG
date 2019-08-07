@@ -9,15 +9,67 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script> -->
     
-    <link rel="stylesheet" href="assets/css/reset.css">
+    <!-- <link rel="stylesheet" href="assets/css/reset.css"> -->
     <link rel="stylesheet" href="assets/css/style.css">
-    <link rel="text/javascript" href="assets/javascript/game.js">
+    <link rel="text/javascript" href="assets/javascript/rpgStarWars.js">
 
 </head>
 <body>
     
+    <div class="main-section-title">Star Wars RPG</div>
+    <div id="main-game-section">
+    <!-- characters section -->
+        <div id="characters-section">
+            <div class="section-title">Select Your Character</div>
+        </div>
+        
+        <!-- section for the selected character (defender) -->
+        <div id="selected-character-section">
+            <div class="section-title">Your Character</div>
+            <!-- where the character appears -->
+        </div>
+
+        <div id="available-to-attack-section">
+            <div class="section-title">Enemies Available To Attack</div>
+        </div>
+
+        <div class="section-title">Fight Section</div>
+        <div id="fight-section">
+            <button id="attack-button">Attack</button>
+        </div>
+
+        <div id="action">
+            <div class="section-title">Defender</div>
+            <!-- Where the defender will appear -->
+            <div id="defender"></div>
+        </div>
+    </div>
+
+<!-- area for game messages -->
+    <div id="game-message"></div>
 
 
+
+
+<!-- GRAPHICS -->
+<!-- need images for 4 characters from Star Wars -->
+<!-- need background image of starship -->
+
+<!-- VARIABLES -->
+<!-- Game status flag
+    var fightingFlag = false;
+    var beatEnemy = false;
+    var wonGame = false;
+    var lostGame = false;
+    var playerOneHP = 0;
+    var playerTwoHP = 0;
+    var playerThreeHP = 0;
+    var playerFourHP = 0;
+    var playerOneGP = 0;
+    var playerTwoGP = 0;
+    var playerThreeGP = 0;
+    var playerFourGP = 0;
+-->
 
     <script>
         
