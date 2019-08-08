@@ -1,9 +1,34 @@
+
+* {
+    box-sizing: border-box;
+}
 body {
-    background-image: url(../images/2-StarWars.jpg);
+    font-family: 'Amaranth', Arial, Helvetica, sans-serif;
+    background-image: url(../images/xwing-fineart.png);
+    background-color: #cccccc;
+    background-attachment: fixed;
+    background-position: center;
+    background-origin: border-box;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
-.section-title { font-size: 200%; } 
+.section-title { font-size: 200%; }
 .main-section-title {
     font-size: 300%;
     text-align: center;
 }
+
+.amar {
+    font-family: 'Amaranth', Arial, Helvetica, sans-serif;
+}
+
+.orbit {
+    font-family: 'Orbitron', Arial, Helvetica, sans-serif;
+}
+
+.baloo { 
+    font-family: 'Baloo Chettan', cursive;
+    color: #f03800;
+}
+
