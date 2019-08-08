@@ -13,20 +13,43 @@ body {
     background-size: cover;
 }
 
+img {
+    height: 100px;
+    width: 150px;
+    border-radius: 10px;
+}
+
 .section-title { font-size: 200%; }
 .main-section-title {
     font-size: 300%;
     text-align: center;
 }
 
+.character {
+    display: inline-block;
+    border-style: solid;
+    border-color: green;
+    border-width: 3 px;
+    cursor: pointer;
+    background-color: white;
+}
+
+.character-image {
+    padding-right: 16px;
+    padding-left: 16px;
+    margin-top: 3px;
+    margin-bottom: 3px;
+}
+
+.character-name { text-align: center; }
+.character-health { text-align: center; }
+
 .amar {
     font-family: 'Amaranth', Arial, Helvetica, sans-serif;
 }
-
 .orbit {
     font-family: 'Orbitron', Arial, Helvetica, sans-serif;
 }
-
 .baloo { 
     font-family: 'Baloo Chettan', cursive;
     color: #f03800;

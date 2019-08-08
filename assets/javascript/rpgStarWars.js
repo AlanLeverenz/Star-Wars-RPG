@@ -6,7 +6,7 @@ $(document).ready(function() {
             name: "Poe Dameron",
             health: 100,
             attack: 12,
-            imageUrl: "assets/images/peo-dameron.jpg",
+            imageUrl: "assets/images/poe-dameron.jpg",
             enemyAttackBack: 15
         },
         "Rey": {
@@ -33,11 +33,14 @@ $(document).ready(function() {
     }; // end var characters
     console.log(characters);
 
+// FUNCTIONS
+// =====================================================================================
+
     // function renders a character card to the page.
     // character rendered and the area they are rendered to.
     var renderOne = function(character, renderArea) {
-        var charDiv = $("div class='character' data-name='" + character.name + "'>");
-        var charName = $("div class='character-name'>").text(character.name);
+        var charDiv = $("<div class='character' data-name='" + character.name + "'>");
+        var charName = $("<div class='character-name'>").text(character.name);
         var charImage = $("<img alt='image' class='character-image'>").attr("src", character.imageUrl);
         var charHealth = $("<div class='character-health'>").text(character.health);
         charDiv.append(charName).append(charImage).append(charHealth);
@@ -58,4 +61,10 @@ $(document).ready(function() {
 
     // Render all characters to the page when game starts
     renderCharacters(characters, "#characters-section");
+
+    $(document).on("click", ".character", function () {
+        console.log("this worked!");
+
+    })
+
 }); // end document.ready
