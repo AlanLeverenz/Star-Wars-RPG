@@ -117,6 +117,8 @@ $(document).ready(function() {
             $(document).on("click", ".enemy", function() {
                 var name = ($(this).attr("data-name"));
 
+                console.log("clicked on defender = " + name);
+
                 // if there is no defender, the clicked enemy will become the next defender
                 if ($("#defender").children().length === 0) {
                     renderCharacters(name, "#defender");
@@ -146,7 +148,7 @@ $(document).ready(function() {
         // re-render player character when attacked.
         if (areaRender === "enemyDamage") {
             $("#selected-character").empty();
-            renderOne(charObj, "#selected-character", "");
+            renderOne(charObj, "#selected-character", "player"); // add player in 2nd arg
         }
 
         // remove defeated enemy.
@@ -221,6 +223,8 @@ $(document).ready(function() {
 
                 // reduce defender's Health Points
                 currDefender.health -= (currSelectedCharacter.attack * turnCounter);
+
+                console.log('currDefender.health: ' + currDefender.health);
 
                 // if the enemy still has health...
                 if (currDefender.health > 0) {
